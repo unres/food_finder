@@ -38,6 +38,7 @@ class Type extends React.Component {
                 style={{ marginTop: "25%" }}
                 onChange={this.props.handleChange("type")}
                 selection
+                 multiple
                 fluid
                 search
                 options={options}
