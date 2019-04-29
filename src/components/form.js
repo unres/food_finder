@@ -3,6 +3,7 @@ import "../css/App.css";
 
 class Form extends React.Component {
   state = { type: "", radius: "", price: "", rating: "" };
+
   onFormSubmit = event => {
     console.log("Hi");
   };
@@ -23,7 +24,12 @@ class Form extends React.Component {
                 <label> Type of Food:</label>
                 <select
                   className="ui fluid dropdown"
-                  onChange={e => console.log(e.target.type)}
+                  onChange={e =>
+                    this.setState({
+                      ...this.state,
+                      price: e.target.value
+                    })
+                  }
                 >
                   <option value="">Food Type</option>
                   <option value="American">American</option>
@@ -38,7 +44,12 @@ class Form extends React.Component {
                 <label> Price Point:</label>
                 <select
                   className="ui fluid dropdown"
-                  onChange={e => console.log(e.target.value)}
+                  onChange={e =>
+                    this.setState({
+                      ...this.state,
+                      price: e.target.value
+                    })
+                  }
                 >
                   <option value="">Price</option>
                   <option value="0">$</option>
@@ -51,7 +62,12 @@ class Form extends React.Component {
                 <label> Rating:</label>
                 <select
                   className="ui fluid dropdown"
-                  onChange={e => console.log(e.target.rating)}
+                  onChange={e =>
+                    this.setState({
+                      ...this.state,
+                      rating: e.target.value
+                    })
+                  }
                 >
                   <option value="">Rate</option>
                   <option value="0">$</option>
