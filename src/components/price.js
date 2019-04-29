@@ -9,17 +9,19 @@ const options = [
 ];
 
 class Price extends React.Component {
+  //calls the  nextStep  function from home.js
   saveAndContinue = e => {
-    console.log(this.props.values);
     e.preventDefault();
     this.props.nextStep();
   };
 
+  //calls the  prevStep  function from home.js
   back = e => {
     e.preventDefault();
     this.props.prevStep();
   };
 
+  //renders a fuild dropdown wrapped  in a grid and a card from semantic-ui
   render() {
     const { values } = this.props;
     return (
@@ -39,7 +41,7 @@ class Price extends React.Component {
               </Header>
               <Dropdown
                 style={{ marginTop: "25%" }}
-                onChange={this.props.handleChange("radius")}
+                onChange={this.props.handleChange("price_min")}
                 label="Price Range"
                 selection
                 fluid
@@ -50,7 +52,7 @@ class Price extends React.Component {
               />
               <Dropdown
                 style={{ marginTop: "10px" }}
-                onChange={this.props.handleChange("rating_max")}
+                onChange={this.props.handleChange("price_max")}
                 label="Price Range"
                 selection
                 fluid
@@ -59,12 +61,12 @@ class Price extends React.Component {
                 values={values}
                 placeholder="Select Maximum"
               />
-              <Button onClick={this.back}>Back</Button>
+
               <Button
                 onClick={this.saveAndContinue}
                 style={{ marginTop: "10px" }}
               >
-                Save And Continue{" "}
+                Next
               </Button>
             </Form>
           </Card.Content>

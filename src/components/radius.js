@@ -13,17 +13,19 @@ const options = [
 ];
 
 class Radius extends React.Component {
+  //calls the  nextStep  function from home.js
   saveAndContinue = e => {
-    console.log(this.props.values);
     e.preventDefault();
     this.props.nextStep();
   };
 
+  //calls the  prevStep  function from home.js
   back = e => {
     e.preventDefault();
     this.props.prevStep();
   };
 
+  //renders a fuild dropdown wrapped  in a grid and a card from semantic-ui
   render() {
     const { values } = this.props;
     return (
@@ -52,12 +54,11 @@ class Radius extends React.Component {
                 values={values}
                 placeholder="Radius in Miles"
               />
-              <Button onClick={this.back}>Back</Button>
               <Button
                 onClick={this.saveAndContinue}
                 style={{ marginTop: "10px" }}
               >
-                Save And Continue{" "}
+                Next
               </Button>
             </Form>
           </Card.Content>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Dropdown, Form, Button, Header, Card, Grid } from "semantic-ui-react";
 
+//All the options for the  dropdown
 const options = [
   { key: "American", text: "American", value: "american" },
   { key: "Chinese", text: "Chinese", value: "chinese" },
@@ -11,12 +12,13 @@ const options = [
 ];
 
 class Type extends React.Component {
+  //calls the  nextStep  function from home.js
   saveAndContinue = e => {
-    console.log(this.props.values);
     e.preventDefault();
     this.props.nextStep();
   };
 
+  //renders a fuild dropdown wrapped  in a grid and a card from semantic-ui
   render() {
     const { values } = this.props;
     return (
@@ -38,7 +40,7 @@ class Type extends React.Component {
                 style={{ marginTop: "25%" }}
                 onChange={this.props.handleChange("type")}
                 selection
-                 multiple
+                multiple
                 fluid
                 search
                 options={options}
@@ -50,7 +52,7 @@ class Type extends React.Component {
                 onClick={this.saveAndContinue}
                 style={{ marginTop: "10px" }}
               >
-                Save And Continue{" "}
+                Next
               </Button>
             </Form>
           </Card.Content>

@@ -1,12 +1,11 @@
 import React from "react";
 
-import Unsplash from "../api/cloud";
-
 import Type from "../components/type";
 import Radius from "../components/radius";
 import Price from "../components/price";
 import Rating from "../components/rating";
 import Final from "../components/final";
+import Spinner from "../components/Spinner";
 
 import "../css/App.css";
 
@@ -23,6 +22,7 @@ class Home extends React.Component {
     lat: this.props.long
   };
 
+  //Fucntion Increments the state variable by 1
   nextStep = () => {
     const { step } = this.state;
     this.setState({
@@ -31,6 +31,7 @@ class Home extends React.Component {
     });
   };
 
+  //Fucntion decrements the state  variable by 1
   prevStep = () => {
     const { step } = this.state;
     this.setState({
@@ -39,8 +40,10 @@ class Home extends React.Component {
     });
   };
 
+  //Function changes assignes values to the given state variables from other components
   handleChange = input => (e, { value }) => this.setState({ [input]: value });
 
+  //In Render, uses a switch case to go back and forth from different component views
   render() {
     const { step } = this.state;
     const {
@@ -101,6 +104,8 @@ class Home extends React.Component {
         );
       case 5:
         return <Final values={values} />;
+      default:
+        return <Spinner message="Something went really wrong" />;
     }
   }
 }
