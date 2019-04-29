@@ -6,6 +6,7 @@ import Type from "../components/type";
 import Radius from "../components/radius";
 import Price from "../components/price";
 import Rating from "../components/rating";
+import Final from "../components/final";
 
 import "../css/App.css";
 
@@ -99,7 +100,7 @@ class Home extends React.Component {
           />
         );
       case 5:
-        return <div />;
+        return <Final values={values} />;
     }
   }
 }
