@@ -6,6 +6,23 @@ class Form extends React.Component {
 
   onFormSubmit = event => {
     console.log("Hi");
+
+    // The two following functions will put the form data in the Request Body
+    // Maybe you want something like this?
+    axios.post('<your endpoint goes here>', { data: this.state }).then((data) => {
+      console.log(data)
+      console.log('Success!')
+    }).catch((err) => {
+      console.error(err)
+    })
+
+    // Or if you don't want it to be nested
+    axios.post('<your endpoint goes here>', { ...this.state }).then((data) => {
+      console.log(data)
+      console.log('Success!')
+    }).catch((err) => {
+      console.error(err)
+    })
   };
 
   render() {
