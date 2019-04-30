@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.ce0ce5a3.chunk.css",
-  "main.js": "/static/js/main.38561a09.chunk.js",
-  "main.js.map": "/static/js/main.38561a09.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.a872fea1.chunk.js": "/static/js/2.a872fea1.chunk.js",
-  "static/js/2.a872fea1.chunk.js.map": "/static/js/2.a872fea1.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.ba1e54e8d0f15c114b5f084b4ab5746a.js": "/precache-manifest.ba1e54e8d0f15c114b5f084b4ab5746a.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.ce0ce5a3.chunk.css.map": "/static/css/main.ce0ce5a3.chunk.css.map"
+  "main.css": "unres.github.io/food_finder/static/css/main.ce0ce5a3.chunk.css",
+  "main.js": "unres.github.io/food_finder/static/js/main.38561a09.chunk.js",
+  "main.js.map": "unres.github.io/food_finder/static/js/main.38561a09.chunk.js.map",
+  "runtime~main.js": "unres.github.io/food_finder/static/js/runtime~main.1c71f1e8.js",
+  "runtime~main.js.map": "unres.github.io/food_finder/static/js/runtime~main.1c71f1e8.js.map",
+  "static/js/2.a872fea1.chunk.js": "unres.github.io/food_finder/static/js/2.a872fea1.chunk.js",
+  "static/js/2.a872fea1.chunk.js.map": "unres.github.io/food_finder/static/js/2.a872fea1.chunk.js.map",
+  "index.html": "unres.github.io/food_finder/index.html",
+  "precache-manifest.a9dc9c2f729fe2566de3e654b4a5901f.js": "unres.github.io/food_finder/precache-manifest.a9dc9c2f729fe2566de3e654b4a5901f.js",
+  "service-worker.js": "unres.github.io/food_finder/service-worker.js",
+  "static/css/main.ce0ce5a3.chunk.css.map": "unres.github.io/food_finder/static/css/main.ce0ce5a3.chunk.css.map"
 }
