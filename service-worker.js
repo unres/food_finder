@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "unres.github.io/food_finder/precache-manifest.a9dc9c2f729fe2566de3e654b4a5901f.js"
+  "/food_finder/precache-manifest.d5671afa8ab9190fa692993cc614b5f6.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("unres.github.io/food_finder/index.html", {
+workbox.routing.registerNavigationRoute("/food_finder/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
